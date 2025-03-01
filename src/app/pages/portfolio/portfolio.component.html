@@ -1,0 +1,74 @@
+<div class="pb-3">
+    <h1 class="title title--h1 title__separate">Portfolio</h1>
+</div>
+
+
+<div class="select">
+    <span class="placeholder">Select category</span>
+    <ul class="filter">
+        <li class="filter__item">Category</li>
+        <li class="filter__item active" data-filter="*"><a class="filter__link active">All</a></li>
+        <li class="filter__item" data-filter=".category-design"><a class="filter__link" >Web Design</a></li>
+        <li class="filter__item" data-filter=".category-applications"><a class="filter__link">Applications</a></li>
+        <li class="filter__item" data-filter=".category-web-development"><a class="filter__link">WebDevelopment</a></li>
+    </ul>
+    <input type="hidden" name="changemetoo" />
+</div>
+
+<div class="fix-content"> 
+    <div class="gallery-grid js-masonry js-filter-container">
+        <div class="gutter-sizer"></div>
+        <ng-container *ngFor="let pData of projectData">
+            <div class='gallery-grid__item {{pData.categoryClass}}'>
+                <div class="swiper-slide js-open-review" data-toggle="modal" attr.data-target="#porfolioModal{{pData.id}}"
+                    data-effect="mfp-zoom-out">
+                    <div class="gallery-grid__image-wrap">
+                        <img class="gallery-grid__image cover lazyload" src="{{pData.img}}" alt="Project" />
+                    </div>
+                    <div class="gallery-grid__caption">
+                        <h3 class="title gallery-grid__title">{{pData.name}}</h3>
+                        <span class="gallery-grid__category">{{pData.category}}</span>
+                    </div>
+                </div>
+            </div>    
+            <div class="modal fade" id="porfolioModal{{pData.id}}" data-backdrop="static" data-keyboard="false" tabindex="-1"
+                aria-labelledby="testimonialLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg modal-dialog-centered">
+                    <div class="modal-content popup mfp-with-anim">
+                        <span class="close" data-dismiss="modal" aria-label="Close" aria-hidden="true">&times;</span>
+                        <div class="row">
+                            <div class="col-12 col-sm-2 full-rewiew-con-avatar">
+                                <figure class="box">
+                                    <img src="{{pData.img}}" alt="">
+                                </figure>
+                                <div class="review-icon-quote"></div>
+                            </div>
+                            <div class="col-12 col-sm-10 full-rewiew-con-text">
+                                <h2 class="title title--h2 mb-1">{{pData.name}}</h2>
+                                <a target="_blank" href="{{pData.webLink}}" >Visit <i style="font-size: 8px;" class="font-icon icon-send"></i></a>
+                                <p>{{pData.desc}}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </ng-container>
+    </div>
+</div>
+
+<!-- <div class="fix-content"> 
+    <a href="https://digivogue.org/" target="_blank" class="gallery-grid">
+        <div class="gutter-sizer"></div>
+        <div class='gallery-grid__item'>
+            <div class="swiper-slide">
+                <div class="gallery-grid__image-wrap">
+                    <img class="gallery-grid__image cover lazyload" src="assets/images/projects/digi.png" alt="Project" />
+                </div>
+                <div class="gallery-grid__caption">
+                    <h3 class="title gallery-grid__title">DigiVogue</h3>
+                    <span class="gallery-grid__category">Website design for Digivogue which is a company posts Lifestyle Blog related to Health, Relationship and Life.</span>
+                </div>
+            </div>
+        </div> 
+    </a>
+</div> -->

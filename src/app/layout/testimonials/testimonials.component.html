@@ -1,0 +1,43 @@
+<div class="testimonials">
+     <h2 class="title title--h2 mt-3">Testimonials</h2>
+
+     <div class="swiper-container js-carousel-review">
+          <div class="swiper-wrapper">
+               <ng-container *ngFor="let testi of feedback">
+                    <div class="swiper-slide review-item box box-inner js-open-review" data-toggle="modal"
+                         attr.data-target="#testimonial{{testi.id}}" data-effect="mfp-zoom-out">
+                         <figure class="box box-avatar">
+                              <img src="{{testi.image}}" alt="{{testi.name}}">
+                         </figure>
+                         <h4 class="title title--h3">{{testi.name}}</h4>
+                         <p class="review-item__caption">{{testi.short_desc}}</p>
+                    </div>
+               </ng-container>
+          </div>
+
+          <div class="swiper-pagination"></div>
+     </div>
+</div>
+
+<ng-container *ngFor="let testi of feedback">
+     <div class="modal fade" id="testimonial{{testi.id}}" data-backdrop="static" data-keyboard="false" tabindex="-1"
+     aria-labelledby="testimonialLabel" aria-hidden="true">
+     <div class="modal-dialog modal-lg modal-dialog-centered">
+          <div class="modal-content popup mfp-with-anim">
+               <span class="close" data-dismiss="modal" aria-label="Close" aria-hidden="true">&times;</span>
+               <div class="row">
+                    <div class="col-12 col-sm-2 full-rewiew-con-avatar">
+                         <figure class="box box-avatar">
+                              <img src="{{testi.image}}" alt="{{testi.name}}">
+                         </figure>
+                         <div class="review-icon-quote"></div>
+                    </div>
+                    <div class="col-12 col-sm-10 full-rewiew-con-text">
+                         <h2 class="title title--h2 mb-1">{{testi.name}}</h2>
+                         <p>{{testi.content}}</p>
+                    </div>
+               </div>
+          </div>
+     </div>
+</div>
+</ng-container>

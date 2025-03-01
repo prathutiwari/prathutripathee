@@ -1,0 +1,16 @@
+/* You can add global styles to this file, and also import other style files */
+
+::-webkit-scrollbar{
+     display: none;
+}
+
+.fix-content{
+     height: 74vh;
+     overflow: auto;
+}
+
+@media (max-width:768px) {
+     .fix-content{
+          height: 64vh;
+     }
+}

@@ -1,0 +1,19 @@
+<main class="main">
+     <div class="container pt-lg-5 pt-3 pb-lg-0 pb-5">
+          <div class="row sticky-parent">
+               <!-- Sidebar -->
+               <aside class="col-12 col-md-12 col-xl-3 flex-fill mb-lg-0 mb-2">
+                    <app-sidebar></app-sidebar>
+               </aside>
+               <!-- Content -->
+               <div class="col-12 col-md-12 col-xl-9 flex-fill">
+                    <router-outlet></router-outlet>
+                    <div class="box-outer" style="height: 100%;">
+                         <!-- Menu -->
+                         <app-navigation></app-navigation>
+                         <router-outlet></router-outlet>
+                    </div>
+               </div>
+          </div>
+     </div>
+</main>

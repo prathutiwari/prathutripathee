@@ -1,0 +1,19 @@
+<div class="nav-container">
+        <ul class="nav">
+                <li class="nav__item">
+                        <a routerLinkActive="active" [routerLink]="['/about']" [routerLinkActiveOptions]="{exact: true}">About</a>
+                </li>
+                <li class="nav__item">
+                        <a routerLinkActive="active" [routerLink]="['/resume']" [routerLinkActiveOptions]="{exact: true}">Resume</a>
+                </li>
+                <li class="nav__item" (click)="reloadPage()">
+                        <a routerLinkActive="active" [routerLink]="['/skills']" [routerLinkActiveOptions]="{exact: true}">Skills</a>
+                </li>
+                <li class="nav__item">
+                        <a routerLinkActive="active" [routerLink]="['/portfolio']" [routerLinkActiveOptions]="{exact: true}">Portfolio</a>
+                </li>
+                <li class="nav__item">
+                        <a routerLinkActive="active" [routerLink]="['/blog']" [routerLinkActiveOptions]="{exact: true}">Blog</a>
+                </li>
+        </ul>
+</div>

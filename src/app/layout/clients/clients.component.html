@@ -1,0 +1,11 @@
+<h2 class="title title--h2 mt-4">Clients</h2>
+<div class="swiper-container js-carousel-clients">
+     <div class="swiper-wrapper">
+          <ng-container *ngFor="let client of myClient">
+               <figure class="swiper-slide">
+                    <a href="#"><img class="logo-client" src="{{client.clientImage}}" alt="Logo" /></a>
+               </figure>
+          </ng-container>
+     </div>
+     <div class="swiper-pagination"></div>
+</div> 
