@@ -16,10 +16,10 @@
 </div>
 
 <div class="fix-content"> 
-    <div class="gallery-grid js-masonry js-filter-container">
-        <div class="gutter-sizer"></div>
+    <div class="gallery-grid" style="display: flex;flex-wrap: wrap;gap: 20px;"> <!-- .js-masonry & .js-filter-container this class is used for changing the view & filter -->
+        <!-- <div class="gutter-sizer"></div> -->
         <ng-container *ngFor="let pData of projectData">
-            <div class='gallery-grid__item' [ngClass]="pData.categoryClass">
+            <div class='gallery-grid__item' [ngClass]="pData.categoryClass" style="position: relative;">
                 <div class="swiper-slide js-open-review" data-toggle="modal" [attr.data-target]="'#porfolioModal' + pData.id"
                     data-effect="mfp-zoom-out">
                     <div class="gallery-grid__image-wrap">
