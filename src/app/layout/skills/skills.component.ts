@@ -10,72 +10,74 @@ export class SkillsComponent implements OnInit {
   skills = [
     {
       id: '1',
-      name: 'HTML5',
-      percentage: '100',
-      percentageTxt:'100%'
+      name: 'React Js'
     },
     {
       id: '2',
-      name: 'CSS',
-      percentage: '100',
-      percentageTxt:'100%'
+      name: 'React Native'
     },
     {
       id: '3',
-      name: 'Bootstrap',
-      percentage: '100',
-      percentageTxt:'100%'
+      name: 'Angular'
     },
     {
       id: '4',
-      name: 'JS & ES',
-      percentage: '70',
-      percentageTxt:'70%'
+      name: 'JS & ES'
     },
     {
       id: '5',
-      name: 'JQuery',
-      percentage: '70',
-      percentageTxt:'70%'
+      name: 'JQuery'
     },
     {
       id: '6',
-      name: 'Angular',
-      percentage: '85',
-      percentageTxt:'85%'
+      name: 'HTML'
+    },
+    {
+      id: '7',
+      name: 'CSS'
+    },
+    {
+      id: '8',
+      name: 'Bootstrap'
+    },
+    {
+      id: '9',
+      name: 'Tailwind'
+    },
+    {
+      id: '10',
+      name: 'Material UI'
     }
 
   ]
   tools = [
     {
       id: '1',
-      name: 'Shopity',
-      percentage: '80',
-      percentageTxt:'80%'
+      name: 'Shopity'
     },
     {
       id: '2',
-      name: 'Liferay',
-      percentage: '45',
-      percentageTxt:'45%'
+      name: 'FIGMA'
     },
     {
       id: '3',
-      name: 'Directus',
-      percentage: '70',
-      percentageTxt:'70%'
+      name: 'Vercel'
     },
     {
       id: '4',
-      name: 'Canva',
-      percentage: '100',
-      percentageTxt:'100%'
+      name: 'Firebase'
     },
     {
       id: '5',
-      name: 'WordPress',
-      percentage: '70',
-      percentageTxt:'70%'
+      name: 'GitHub'
+    },
+    {
+      id: '6',
+      name: 'Canva'
+    },
+    {
+      id: '7',
+      name: 'Directus'
     }
 
   ]

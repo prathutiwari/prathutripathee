@@ -17,9 +17,9 @@ export class HomeComponent implements OnInit {
     },
     {
       id:'2',
-      title:'Video Editing',
-      image:'assets/icons/icon-photo.svg',
-      content:'I specialize in creating high-quality video editing solutions to the specific needs of businesses or individuals.'
+      title:'Shopify Development',
+      image:'assets/icons/icon-quote.svg',
+      content:'I specialize in custom Shopify solutions, helping businesses set up, optimize, and scale their online stores with seamless functionality and engaging UI/UX.'
     },
     {
       id:'3',

@@ -30,7 +30,7 @@ export class ResumeComponent implements OnInit {
       years:'2016-2017',
       course:'Intermediate',
       description:'PCM',
-      subDescription:'Score: 75%'
+      subDescription:''
     },
     {
       id:'4',
@@ -38,7 +38,7 @@ export class ResumeComponent implements OnInit {
       years:'2014-2015',
       course:'HighScool',
       description:'Science & Computer Science',
-      subDescription:'Score: 78%'
+      subDescription:''
     }
   ]
   experience=[
