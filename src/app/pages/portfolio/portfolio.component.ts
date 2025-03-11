@@ -58,7 +58,7 @@ export class PortfolioComponent implements OnInit, AfterViewInit {
       name: 'Brooklyn Data',
       webLink: 'https://brooklyndata.co/',
       img: 'assets/images/projects/bdc.png',
-      categoryClass: 'category-applications',
+      categoryClass: 'category-web-development',
       category: 'Applications',
       desc: 'Created Website UI with the integration with Directus.',
     }
