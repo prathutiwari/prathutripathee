@@ -10,7 +10,7 @@ export class PortfolioComponent implements OnInit, AfterViewInit {
   projectData = [
     {
       id: 1,
-      name: '',
+      name: 'Flix-GPT',
       webLink: 'https://flix-gpt-xi.vercel.app',
       img: 'assets/images/projects/netflix.png',
       categoryClass: 'category-applications',
