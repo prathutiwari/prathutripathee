@@ -51,7 +51,7 @@ export class PortfolioComponent implements OnInit, AfterViewInit {
       img: 'assets/images/projects/Moonboard-1.jpg',
       categoryClass: 'category-web-development',
       category: 'Applications',
-      desc: 'Created Website UI with the integration with Directus.',
+      desc: 'Created a Ecommerce store from scratch with Shopify Plus',
     }
     
   ];
