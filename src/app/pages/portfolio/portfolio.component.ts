@@ -48,7 +48,7 @@ export class PortfolioComponent implements OnInit, AfterViewInit {
       id: 5,
       name: 'Vitapod World',
       webLink: 'https://www.vitapodworld.com/',
-      img: 'assets/images/projects/vitapod.jpg',
+      img: 'assets/images/projects/vitapod.png',
       categoryClass: 'category-web-development',
       category: 'Applications',
       desc: 'Created a Ecommerce store from scratch with Shopify Plus',
