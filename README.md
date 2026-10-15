@@ -1,27 +1,22 @@
-# Portfolio
+# Prathu Portfolio
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.8.
+A separate Next.js portfolio with the approved dark charcoal and gold design, local Manrope typography and original project imagery.
 
-## Development server
+Run `npm ci`, then `npm run dev`. Validate with `npm run build` and `node tests/contact.cjs`. Node 22.13+ is recommended.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Implemented routes: `/`, `/about`, `/skills`, `/work`, `/work/[slug]` for all nine approved projects, `/insights`, `/products`, `/shopify/for-agencies`, `/contact`, and `/api/contact`.
 
-## Code scaffolding
+- Background and skills: `src/content/background.ts`; project descriptions: `src/content/work.ts`; profile and products: `src/content/site.ts`.
+- Recent experience follows the supplied resume: Photon from July 2025; ZiggleTech February 2022–June 2025. Earlier internships remain in a compact disclosure without invented dates. Degree grades and conflicting university spelling are omitted.
+- The unchanged resume is downloadable from `public/resume/`. Social icons have accessible names and use the approved resume LinkedIn URL.
+- Project filters and detail pages work locally. Images show historical work, not claims about current client sites. No fabricated outcomes or testimonials are included.
+- Products link to the supplied Gumroad destinations. Actual product screenshots and demo assets are still needed for deeper product detail pages.
+- Contact uses Resend to send inquiries directly to your inbox, with an on-page confirmation for visitors. No database is required. Sending stays disabled until email configuration is supplied. WhatsApp links open a separate chat. Follow [contact setup](docs/contact-setup.md); actual inbox delivery has not been tested.
+- Agency outreach can use `/shopify/for-agencies` with a relevant project link. Its inquiry CTA selects Agency partnership on the contact form. No outreach messages were sent.
+- Preview indexing stays disabled. Configure `SITE_URL` and `SITE_INDEXABLE=true` only for an approved public launch.
+- The existing Angular production site remains separate. No deployment or domain cutover is configured.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Further service pages and product demos should be added with complete content and real assets. Source audit history is in [implementation notes](docs/implementation-notes.md).
 
-## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
 
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
